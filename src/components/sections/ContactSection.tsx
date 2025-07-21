@@ -344,22 +344,29 @@ export function ContactSection({
 
   const socialLinks = {
     github: {
-      url: "YOUR_GITHUB_URL",
+      url: "https://github.com/huyisme-005",
       icon: <FiGithub className="h-5 w-5" />,
       label: "GitHub",
-      color: "#333",
+      color: "#166534",
       description: "View my GitHub repositories",
-      title: "GitHub: YOUR_GITHUB_URL",
+      title: "GitHub: huyisme-005",
     },
     email: {
-      url: "mailto:YOUR_EMAIL",
+      url: "mailto:hl9082@rit.edu",
       icon: <FiMail className="h-5 w-5" />,
       label: "Email",
-      title: "Email: YOUR_EMAIL",
-      color: "#2563eb",
+      title: "Email: hl9082@rit.edu",
+      color: "#22c55e",
       description: "Send me an email",
     },
-    // Add more social links as needed, each with a color, description, and title property
+    linkedin: {
+      url: "https://linkedin.com/in/huy-g-le",
+      icon: <FaLinkedin className="h-5 w-5" />,
+      label: "LinkedIn",
+      title: "LinkedIn: huy-g-le",
+      color: "#15803d",
+      description: "Connect with me on LinkedIn",
+    },
   };
 
   const contactMethods = [

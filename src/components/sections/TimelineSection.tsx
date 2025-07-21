@@ -18,145 +18,32 @@ interface TimelineEvent {
   details?: string[];
 }
 
-const timelineData: TimelineEvent[] = [
-  // Education
+export const experienceData = [
   {
-    type: "education",
-    year: "2024",
-    title: "Master's degree, Business Administration",
-    org: "University Name",
-    date: "Aug 2023 - Dec 2024",
-    logo: "/images/logos/pm_happy_hour_logo.jpeg",
-    details: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Relevant Coursework: Product Management, Business Strategy, Data Analytics",
-      "Awards: Dean's List, Academic Excellence",
+    title: "Fullstack Developer Intern",
+    company: "PlatiHUB Co Ltd.",
+    period: "June 2024 - August 2024",
+    description:
+      "Built and deployed the frontend of a dynamic web application with React.js. Improved UI aesthetics and responsiveness with HTML and CSS by 40%. Created email aliases for staff with Zoho credentials using JavaScript. Improved API security with Spring Boot by 30%.",
+    achievements: [
+      "Built and deployed frontend with React.js",
+      "Improved UI aesthetics and responsiveness by 40%",
+      "Created 3+ email aliases for staff with Zoho credentials",
+      "Improved API security with Spring Boot by 30%",
     ],
   },
   {
-    type: "education",
-    year: "2021",
-    title: "Bachelor's degree, Business Administration",
-    org: "University Name",
-    date: "Aug 2017 - May 2021",
-    logo: "/images/logos/pm_happy_hour_logo.jpeg",
-    details: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Relevant Coursework: Marketing, Finance, Operations Management, Business Analytics",
-      "Awards: Dean's List, Academic Excellence",
-    ],
-  },
-  {
-    type: "education",
-    year: "2017",
-    title: "High School Diploma",
-    org: "High School Name",
-    date: "Aug 2013 - May 2017",
-    logo: "/images/logos/pm_happy_hour_logo.jpeg",
-    details: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Leadership activities and community service",
-      "Academic excellence and extracurricular involvement",
-    ],
-  },
-  // Experience (Most Recent First)
-  {
-    type: "experience",
-    year: "2025",
-    title: "Senior Product Manager",
-    org: "Company Name · Full-time",
-    date: "Jan 2025 - Present",
-    logo: "/images/logos/pm_happy_hour_logo.jpeg",
-    category: "product",
-    bullets: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    ],
-  },
-  {
-    type: "experience",
-    year: "2024",
-    title: "Product Manager",
-    org: "Company Name · Full-time",
-    date: "Mar 2024 - Dec 2024",
-    logo: "/images/logos/pm_happy_hour_logo.jpeg",
-    category: "product",
-    bullets: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    ],
-  },
-  {
-    type: "experience",
-    year: "2024",
-    title: "Product Manager Intern",
-    org: "Company Name · Internship",
-    date: "Jun 2024 - Aug 2024",
-    logo: "/images/logos/pm_happy_hour_logo.jpeg",
-    category: "product",
-    bullets: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    ],
-  },
-  {
-    type: "experience",
-    year: "2023",
-    title: "Associate Product Manager",
-    org: "Company Name · Full-time",
-    date: "Jan 2023 - Dec 2023",
-    logo: "/images/logos/pm_happy_hour_logo.jpeg",
-    category: "product",
-    bullets: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    ],
-  },
-  {
-    type: "experience",
-    year: "2022",
-    title: "Product Analyst",
-    org: "Company Name · Full-time",
-    date: "Jan 2022 - Dec 2022",
-    logo: "/images/logos/pm_happy_hour_logo.jpeg",
-    category: "product",
-    bullets: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    ],
-  },
-  {
-    type: "experience",
-    year: "2021",
-    title: "Business Analyst",
-    org: "Company Name · Full-time",
-    date: "Jan 2021 - Dec 2021",
-    logo: "/images/logos/pm_happy_hour_logo.jpeg",
-    category: "product",
-    bullets: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    ],
-  },
-  {
-    type: "experience",
-    year: "2020",
-    title: "Marketing Intern",
-    org: "Company Name · Internship",
-    date: "Jun 2020 - Aug 2020",
-    logo: "/images/logos/pm_happy_hour_logo.jpeg",
-    category: "marketing",
-    bullets: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Software Engineering Intern",
+    company: "Paralgl",
+    period: "May 2025 - August 2025",
+    description:
+      "Develop and maintain frontend applications using Next.js. Build and optimize backend services and APIs with Django. Manage containerization and deployment workflows with Docker. Collaborate with cross-functional teams to design scalable, secure, and maintainable full-stack solutions. Integrate AI-powered services and APIs into the product ecosystem.",
+    achievements: [
+      "Developed and maintained frontend with Next.js",
+      "Built and optimized backend services with Django",
+      "Managed containerization and deployment with Docker",
+      "Integrated AI-powered services and APIs",
+      "Contributed to architectural decisions and best practices",
     ],
   },
 ];
@@ -209,54 +96,52 @@ export function TimelineSection({
   const filteredTimeline = React.useMemo(() => {
     // Special filtering for tour step 4 - show specific experiences in priority order
     if (tourActive && currentStep === 3) {
-      const allExperiences = timelineData.filter(
-        (item) => item.type === "experience"
-      );
+      const allExperiences = experienceData;
 
       // Define the priority 4 experiences in the requested order
-      const priorityExperiences: TimelineEvent[] = [];
+      const priorityExperiences: typeof experienceData = [];
 
       // 1. PM Happy Hour · Internship (Product Manager) - Mar 2025 - Present
       const pmHappyHour = allExperiences.find(
         (item) =>
-          item.title === "Product Manager" && item.org.includes("PM Happy Hour")
+          item.title === "Fullstack Developer Intern" && item.company.includes("PlatiHUB Co Ltd.")
       );
       if (pmHappyHour) priorityExperiences.push(pmHappyHour);
 
       // 2. Tutora · Part-time (AI Product Consultant & CS Instructor) - Mar 2021 - Present
       const tutora = allExperiences.find(
         (item) =>
-          item.title === "AI Product Consultant & CS Instructor" &&
-          item.org.includes("Tutora")
+          item.title === "Software Engineering Intern" &&
+          item.company.includes("Paralgl")
       );
       if (tutora) priorityExperiences.push(tutora);
 
       // 3. Kearney (Student Consultant, Technical Lead) - Sep 2024 - Dec 2024
-      const kearney = allExperiences.find(
-        (item) =>
-          item.title === "Student Consultant, Technical Lead" &&
-          item.org.includes("Kearney")
-      );
-      if (kearney) priorityExperiences.push(kearney);
+      // const kearney = allExperiences.find(
+      //   (item) =>
+      //     item.title === "Student Consultant, Technical Lead" &&
+      //     item.org.includes("Kearney")
+      // );
+      // if (kearney) priorityExperiences.push(kearney);
 
       // 4. Motorola Solutions · Full-time (Embedded Android Engineer) - Aug 2021 - Aug 2023
-      const motorola = allExperiences.find(
-        (item) =>
-          item.title === "Embedded Android Engineer" &&
-          item.org.includes("Motorola Solutions")
-      );
-      if (motorola) priorityExperiences.push(motorola);
+      // const motorola = allExperiences.find(
+      //   (item) =>
+      //     item.title === "Embedded Android Engineer" &&
+      //     item.org.includes("Motorola Solutions")
+      // );
+      // if (motorola) priorityExperiences.push(motorola);
 
       // Get the rest of the experiences (excluding the priority 4)
       const priorityTitlesAndOrgs = priorityExperiences.map((exp) => ({
         title: exp.title,
-        org: exp.org,
+        org: exp.company,
       }));
 
       const remainingExperiences = allExperiences.filter((item) => {
         return !priorityTitlesAndOrgs.some(
           (priority) =>
-            priority.title === item.title && priority.org === item.org
+            priority.title === item.title && priority.org === item.company
         );
       });
 
@@ -264,7 +149,7 @@ export function TimelineSection({
       return [...priorityExperiences, ...remainingExperiences];
     }
 
-    return timelineData.filter(
+    return experienceData.filter(
       (item) =>
         activeCategory === "all" ||
         item.category === activeCategory ||
@@ -425,7 +310,7 @@ export function TimelineSection({
               Education
             </h3>
             <div className="space-y-6">
-              {timelineData
+              {experienceData
                 .filter((item) => item.type === "education")
                 .map((item) => {
                   const cardId = `${item.type}-${item.year}-${item.title}`;

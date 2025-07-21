@@ -4,25 +4,24 @@
 export const siteConfig = {
   // Basic Information
   name: "Huy Le",
-  title: "Computer Science Student",
+  title: "Software Engineering Intern",
   description:
-    "Portfolio website showcasing my work in Software Engineering and Computer Science",
+    "Portfolio website showcasing my work in Software Development, Frontend, Backend, Fullstack, and AI Engineering.",
 
   // Contact Information
   contact: {
-    email: "hl9082@rit.com",
-    phone: "+1 (404)-203-9864",
+    email: "hl9082@rit.edu",
+    personalEmail: "legiahuy050104@gmail.com",
     linkedin: "https://linkedin.com/in/huy-g-le",
     github: "https://github.com/huyisme-005",
   },
 
-
   // Hero Section
   hero: {
     headline: "Hi, I'm Huy Le",
-    subtitle: "I help companies build better products",
+    subtitle: "I help companies build better products with code and AI.",
     description:
-      "Computer Science student with expertise in fullstack development, AI Development, and an eagerness to go above and beyond.",
+      "A Computer Science student driven by the mission to support society with greater goods. Always looking forward to learning and going beyond the code to solve the most pressing issues.",
     ctaText: "View My Work",
     ctaLink: "#projects",
   },
@@ -30,14 +29,12 @@ export const siteConfig = {
   // About Section
   about: {
     title: "About Me",
-    content: `I'm a passionate product manager with over 5 years of experience in the tech industry. 
-    I specialize in user experience design, business strategy, and team leadership. 
-    My approach combines data-driven insights with creative problem-solving to deliver products that users love and businesses value.`,
+    content: `I'm a Computer Science student at Rochester Institute of Technology, passionate about building impactful software solutions. My expertise spans fullstack development, AI engineering, and cloud technologies. I thrive in collaborative environments and am always eager to learn and tackle new challenges.`,
     highlights: [
-      "5+ years in product management",
-      "Led teams of 10+ people",
-      "Increased user engagement by 40%",
-      "Launched 3 successful products",
+      "Software Engineering Intern at PlatiHUB Co Ltd. & Paralgl",
+      "Fullstack, AI, and Cloud Development",
+      "Bachelor's of Science at RIT",
+      "Driven by social impact and continuous learning",
     ],
   },
 
@@ -46,34 +43,36 @@ export const siteConfig = {
     {
       category: "Technical Skills",
       items: [
-        "Product Strategy",
-        "User Research",
-        "Data Analysis",
-        "A/B Testing",
-        "Agile/Scrum",
-        "Figma",
-        "SQL",
         "Python",
+        "Java",
+        "C/C++",
+        "React",
+        "Angular",
+        "AWS",
+        "AI Copilot",
       ],
     },
     {
       category: "Soft Skills",
       items: [
-        "Team Leadership",
-        "Stakeholder Management",
+        "Teamwork",
         "Communication",
         "Problem Solving",
-        "Strategic Thinking",
-        "User Empathy",
+        "Adaptability",
+        "Continuous Learning",
       ],
     },
     {
       category: "Tools & Platforms",
       items: [
-        "Slack",
-        "Discord",
-        "Trello",
-        "ClickUp",
+        "Next.js",
+        "Spring Boot",
+        "Docker",
+        "Tailwind CSS",
+        "Genkit",
+        "Zod",
+        "Vercel",
+        "AWS DynamoDB",
       ],
     },
   ],
@@ -81,75 +80,88 @@ export const siteConfig = {
   // Projects Section
   projects: [
     {
-      title: "E-commerce Platform Redesign",
+      title: "La Musique",
       description:
-        "Led the complete redesign of a major e-commerce platform, resulting in 40% increase in conversion rate and 25% improvement in user satisfaction scores.",
-      technologies: ["User Research", "UX Design", "A/B Testing", "Analytics"],
-      link: "https://your-project.com",
+        "La Musique is an adaptive song-writing application designed to be your creative music partner. It leverages Google Gemini AI API to generate song lyrics and fitting melodies based on user-provided themes, details, and a selected emotion. It also detects the genres of the input audios. The app allows users to write music without artistic background.",
+      technologies: ["Next.js", "React", "Tailwind CSS", "Genkit", "Zod", "Vercel"],
+      link: "#",
       image: "/images/placeholders/pm_happy_hour_logo.jpeg",
-    },
-    {
-      title: "Mobile App Launch",
-      description:
-        "Successfully launched a mobile app from concept to 100K+ downloads, managing cross-functional teams and stakeholder relationships.",
-      technologies: [
-        "Product Strategy",
-        "Team Leadership",
-        "Go-to-Market",
-        "User Acquisition",
+      achievements: [
+        "Built interactive stage with Next.js & React, making song creation more dynamic and smoother by 50%",
+        "Crafted stunning, responsive visuals with ShadCN & Tailwind CSS",
+        "Integrated Genkit with Google Gemini for lyrics, melodies, and genre detection (≥70% confidence)",
+        "Ensured code quality and precise data with TypeScript & Zod",
       ],
-      link: "https://your-project.com",
-      image: "/images/placeholders/pm_happy_hour_logo.jpeg",
     },
     {
-      title: "Data Analytics Dashboard",
+      title: "U-fund project",
       description:
-        "Built a comprehensive analytics dashboard that improved decision-making speed by 60% and provided actionable insights to stakeholders.",
-      technologies: ["Data Analysis", "SQL", "Python", "Data Visualization"],
-      link: "https://your-project.com",
+        "U-fund is made to help manage and support the variety of needs for a non-profit organization. Through the website, Managers can list what they need, and helpers can fund the needs they want to support.",
+      technologies: ["Angular", "Spring Boot", "Java", "JUnit", "Docker"],
+      link: "#",
       image: "/images/placeholders/pm_happy_hour_logo.jpeg",
+      achievements: [
+        "Built SPA with Angular",
+        "Enhanced website background by 40% with HTML and CSS",
+        "Facilitated development and deployment with Spring Boot by 30%",
+        "Increased test coverage to 90% with JUnit",
+        "Containerized app and enhanced security by 60% with Docker",
+        "Secured user data with mock-up JSON storage",
+      ],
+    },
+    {
+      title: "ReWear",
+      description:
+        "Help users shop sustainably by finding affordable second-hand fashion, connecting them with local clothing swaps, and building communities where they can share wardrobes and track their fashion impact.",
+      technologies: ["React", "Next.js", "AWS DynamoDB", "JavaScript", "Python", "Google Form"],
+      link: "#",
+      image: "/images/placeholders/pm_happy_hour_logo.jpeg",
+      achievements: [
+        "Gathered 14 early adopters via Google Form Survey",
+        "Built a landing page with React",
+        "Created a data storage with AWS DynamoDB for users' accounts",
+      ],
     },
   ],
 
   // Experience Timeline
   experience: [
     {
-      title: "Senior Product Manager",
-      company: "Tech Company Inc.",
-      period: "2023 - Present",
+      title: "Fullstack Developer Intern",
+      company: "PlatiHUB Co Ltd.",
+      period: "June 2024 - August 2024",
       description:
-        "Leading product strategy and development for the company's flagship product, managing a team of 8 product managers and designers.",
+        "Built and deployed the frontend of a dynamic web application with React.js. Improved UI aesthetics and responsiveness with HTML and CSS by 40%. Created email aliases for staff with Zoho credentials using JavaScript. Improved API security with Spring Boot by 30%.",
       achievements: [
-        "Increased user engagement by 40% through feature optimization",
-        "Launched 3 major product features with 95% user satisfaction",
-        "Reduced customer churn by 25% through improved onboarding",
+        "Built and deployed frontend with React.js",
+        "Improved UI aesthetics and responsiveness by 40%",
+        "Created 3+ email aliases for staff with Zoho credentials",
+        "Improved API security with Spring Boot by 30%",
       ],
     },
     {
-      title: "Product Manager",
-      company: "Startup XYZ",
-      period: "2021 - 2023",
+      title: "Software Engineering Intern",
+      company: "Paralgl",
+      period: "May 2025 - August 2025",
       description:
-        "Managed product development lifecycle for a B2B SaaS platform, working closely with engineering and design teams.",
+        "Develop and maintain frontend applications using Next.js. Build and optimize backend services and APIs with Django. Manage containerization and deployment workflows with Docker. Collaborate with cross-functional teams to design scalable, secure, and maintainable full-stack solutions. Integrate AI-powered services and APIs into the product ecosystem.",
       achievements: [
-        "Led the development of 5 core product features",
-        "Improved customer retention by 30%",
-        "Established product analytics and user research processes",
-      ],
-    },
-    {
-      title: "Associate Product Manager",
-      company: "Enterprise Corp",
-      period: "2019 - 2021",
-      description:
-        "Supported senior product managers in feature development and user research for enterprise software solutions.",
-      achievements: [
-        "Conducted user research with 200+ customers",
-        "Managed 3 product features from concept to launch",
-        "Improved team productivity by 20% through process optimization",
+        "Developed and maintained frontend with Next.js",
+        "Built and optimized backend services with Django",
+        "Managed containerization and deployment with Docker",
+        "Integrated AI-powered services and APIs",
+        "Contributed to architectural decisions and best practices",
       ],
     },
   ],
+
+  // Education
+  education: {
+    degree: "Bachelor's of Science",
+    field: "Computer Science",
+    university: "Rochester Institute of Technology",
+    location: "Rochester, NY, USA",
+  },
 
   // Testimonials
   testimonials: [

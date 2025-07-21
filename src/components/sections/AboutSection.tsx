@@ -6,6 +6,17 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
+export const aboutData = {
+  title: "About Me",
+  content: `I'm a Computer Science student at Rochester Institute of Technology, passionate about building impactful software solutions. My expertise spans fullstack development, AI engineering, and cloud technologies. I thrive in collaborative environments and am always eager to learn and tackle new challenges.`,
+  highlights: [
+    "Software Engineering Intern at PlatiHUB Co Ltd. & Paralgl",
+    "Fullstack, AI, and Cloud Development",
+    "Bachelor's of Science at RIT",
+    "Driven by social impact and continuous learning",
+  ],
+};
+
 export function AboutSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });

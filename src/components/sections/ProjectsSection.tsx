@@ -20,223 +20,55 @@ interface Project {
   achievements?: string[];
 }
 
-const projectsData = {
-  all: [
-    {
-      title: "Product Launch Strategy",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      image: "/images/logos/pm_happy_hour_logo.jpeg",
-      tags: ["Product Management", "Strategy", "Launch", "Market Research"],
-      link: "#",
-      linkText: "View Project",
-      linkIcon: "external" as const,
-      featured: true,
-      achievements: [
-        "Improved user engagement",
-        "Data-driven decisions",
-        "Cross-functional leadership",
-        "Market success",
-      ],
-    },
-    {
-      title: "User Experience Redesign",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      image: "/images/logos/pm_happy_hour_logo.jpeg",
-      tags: ["UX Design", "Product Management", "User Research", "Design"],
-      link: "#",
-      linkText: "View Project",
-      linkIcon: "external" as const,
-    },
-    {
-      title: "Business Process Optimization",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      image: "/images/logos/pm_happy_hour_logo.jpeg",
-      tags: [
-        "Process Improvement",
-        "Automation",
-        "Business Analysis",
-        "Efficiency",
-      ],
-      link: "#",
-      linkText: "View Project",
-      linkIcon: "external" as const,
-    },
-    {
-      title: "Analytics Dashboard",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      image: "/images/logos/pm_happy_hour_logo.jpeg",
-      tags: [
-        "Analytics",
-        "Dashboard",
-        "Data Visualization",
-        "Business Intelligence",
-      ],
-      link: "#",
-      linkText: "View Project",
-      linkIcon: "external" as const,
-      featured: true,
-      achievements: [
-        "Improved decision making",
-        "Real-time insights",
-        "User-friendly interface",
-        "Cross-department adoption",
-      ],
-    },
-    {
-      title: "Mobile App Development",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      image: "/images/logos/pm_happy_hour_logo.jpeg",
-      tags: ["Mobile", "App Development", "Product Management", "Launch"],
-      link: "#",
-      linkText: "View Project",
-      linkIcon: "external" as const,
-    },
-    {
-      title: "Market Analysis Report",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      image: "/images/logos/pm_happy_hour_logo.jpeg",
-      tags: ["Market Research", "Analysis", "Strategy", "Data Science"],
-      link: "#",
-      linkText: "View Report",
-      linkIcon: "external" as const,
-    },
-    {
-      title: "Team Leadership Project",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      image: "/images/logos/pm_happy_hour_logo.jpeg",
-      tags: ["Leadership", "Team Management", "Project Management", "Strategy"],
-      link: "#",
-      linkText: "View Project",
-      linkIcon: "external" as const,
-    },
-    {
-      title: "Customer Research Study",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      image: "/images/logos/pm_happy_hour_logo.jpeg",
-      tags: ["Research", "Customer Insights", "User Research", "Analysis"],
-      link: "#",
-      linkText: "View Study",
-      linkIcon: "external" as const,
-    },
-    {
-      title: "Product Strategy Framework",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      image: "/images/logos/pm_happy_hour_logo.jpeg",
-      tags: ["Strategy", "Framework", "Product Management", "Planning"],
-      link: "#",
-      linkText: "View Framework",
-      linkIcon: "external" as const,
-    },
-    {
-      title: "Data Analysis Project",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      image: "/images/logos/pm_happy_hour_logo.jpeg",
-      tags: ["Data Analysis", "Analytics", "Insights", "Reporting"],
-      link: "#",
-      linkText: "View Analysis",
-      linkIcon: "external" as const,
-    },
-    {
-      title: "Feature Development",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      image: "/images/logos/pm_happy_hour_logo.jpeg",
-      tags: [
-        "Feature Development",
-        "Product Management",
-        "Development",
-        "Launch",
-      ],
-      link: "#",
-      linkText: "View Feature",
-      linkIcon: "external" as const,
-    },
-    {
-      title: "Competitive Analysis",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      image: "/images/logos/pm_happy_hour_logo.jpeg",
-      tags: ["Competitive Analysis", "Market Research", "Strategy", "Research"],
-      link: "#",
-      linkText: "View Analysis",
-      linkIcon: "external" as const,
-    },
-    {
-      title: "User Journey Mapping",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      image: "/images/logos/pm_happy_hour_logo.jpeg",
-      tags: ["User Journey", "UX Design", "Mapping", "User Research"],
-      link: "#",
-      linkText: "View Journey",
-      linkIcon: "external" as const,
-    },
-    {
-      title: "Product Roadmap",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      image: "/images/logos/pm_happy_hour_logo.jpeg",
-      tags: ["Roadmap", "Product Planning", "Strategy", "Timeline"],
-      link: "#",
-      linkText: "View Roadmap",
-      linkIcon: "external" as const,
-    },
-    {
-      title: "Portfolio Website",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      image: "/images/logos/pm_happy_hour_logo.jpeg",
-      tags: ["Next.js", "React", "TailwindCSS", "TypeScript"],
-      link: "https://github.com/LawrenceHua/LawrenceHua.io",
-      linkText: "View Source",
-      linkIcon: "github" as const,
-    },
-    {
-      title: "Market Research Analysis",
-      description:
-        "Conducted comprehensive market research for a new product launch, analyzing competitor landscape and identifying market opportunities that informed strategic decisions.",
-      image: "/images/logos/pm_happy_hour_logo.jpeg",
-      tags: ["Market Research", "Competitive Analysis", "Strategy", "Business"],
-      link: "https://example.com",
-      linkText: "View Analysis",
-      linkIcon: "external" as const,
-    },
-    {
-      title: "User Experience Optimization",
-      description:
-        "Led user experience improvements for a web application, resulting in 40% increase in user satisfaction scores and reduced support tickets by 30%.",
-      image: "/images/logos/pm_happy_hour_logo.jpeg",
-      tags: ["UX Design", "User Research", "Web Application", "Optimization"],
-      link: "https://example.com",
-      linkText: "View Project",
-      linkIcon: "external" as const,
-    },
-    {
-      title: "Product Strategy Development",
-      description:
-        "Developed comprehensive product strategy for a new market segment, including roadmap planning, feature prioritization, and go-to-market strategy.",
-      image: "/images/logos/pm_happy_hour_logo.jpeg",
-      tags: ["Product Strategy", "Roadmap", "Go-to-Market", "Planning"],
-      link: "https://example.com",
-      linkText: "View Strategy",
-      linkIcon: "external" as const,
-    },
-  ],
-};
+export const projectsData = [
+  {
+    title: "La Musique",
+    description:
+      "La Musique is an adaptive song-writing application designed to be your creative music partner. It leverages Google Gemini AI API to generate song lyrics and fitting melodies based on user-provided themes, details, and a selected emotion. It also detects the genres of the input audios. The app allows users to write music without artistic background.",
+    technologies: ["Next.js", "React", "Tailwind CSS", "Genkit", "Zod", "Vercel"],
+    link: "#",
+    image: "/images/placeholders/pm_happy_hour_logo.jpeg",
+    achievements: [
+      "Built interactive stage with Next.js & React, making song creation more dynamic and smoother by 50%",
+      "Crafted stunning, responsive visuals with ShadCN & Tailwind CSS",
+      "Integrated Genkit with Google Gemini for lyrics, melodies, and genre detection (≥70% confidence)",
+      "Ensured code quality and precise data with TypeScript & Zod",
+    ],
+  },
+  {
+    title: "U-fund project",
+    description:
+      "U-fund is made to help manage and support the variety of needs for a non-profit organization. Through the website, Managers can list what they need, and helpers can fund the needs they want to support.",
+    technologies: ["Angular", "Spring Boot", "Java", "JUnit", "Docker"],
+    link: "#",
+    image: "/images/placeholders/pm_happy_hour_logo.jpeg",
+    achievements: [
+      "Built SPA with Angular",
+      "Enhanced website background by 40% with HTML and CSS",
+      "Facilitated development and deployment with Spring Boot by 30%",
+      "Increased test coverage to 90% with JUnit",
+      "Containerized app and enhanced security by 60% with Docker",
+      "Secured user data with mock-up JSON storage",
+    ],
+  },
+  {
+    title: "ReWear",
+    description:
+      "Help users shop sustainably by finding affordable second-hand fashion, connecting them with local clothing swaps, and building communities where they can share wardrobes and track their fashion impact.",
+    technologies: ["React", "Next.js", "AWS DynamoDB", "JavaScript", "Python", "Google Form"],
+    link: "#",
+    image: "/images/placeholders/pm_happy_hour_logo.jpeg",
+    achievements: [
+      "Gathered 14 early adopters via Google Form Survey",
+      "Built a landing page with React",
+      "Created a data storage with AWS DynamoDB for users' accounts",
+    ],
+  },
+];
 
 const getDynamicCategories = () => {
-  const featuredProjects = projectsData.all.filter((p) => p.featured);
-  const regularProjects = projectsData.all.filter((p) => !p.featured);
+  const featuredProjects = projectsData.filter((p) => p.featured);
+  const regularProjects = projectsData.filter((p) => !p.featured);
 
   const aiCount =
     featuredProjects.length +
@@ -278,7 +110,7 @@ const getDynamicCategories = () => {
     ).length;
 
   return [
-    { key: "all", label: "All Projects", count: projectsData.all.length },
+    { key: "all", label: "All Projects", count: projectsData.length },
     { key: "product", label: "Product", count: productCount },
     { key: "ai", label: "AI/ML", count: aiCount },
     { key: "engineering", label: "Engineering", count: engineeringCount },
@@ -310,8 +142,8 @@ export function ProjectsSection() {
   const categories = getDynamicCategories();
 
   const getFilteredProjects = () => {
-    const featuredProjects = projectsData.all.filter((p) => p.featured);
-    const regularProjects = projectsData.all.filter((p) => !p.featured);
+    const featuredProjects = projectsData.filter((p) => p.featured);
+    const regularProjects = projectsData.filter((p) => !p.featured);
 
     let filteredRegular = regularProjects;
 
@@ -357,7 +189,7 @@ export function ProjectsSection() {
   };
 
   const allProjectsForDisplay = getFilteredProjects();
-  const featuredProjects = projectsData.all.filter((p) => p.featured);
+  const featuredProjects = projectsData.filter((p) => p.featured);
 
   const projectsToShow = showAll
     ? allProjectsForDisplay

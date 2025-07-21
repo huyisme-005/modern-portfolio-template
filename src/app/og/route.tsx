@@ -88,14 +88,14 @@ export async function GET() {
                 fontSize: "48px",
                 fontWeight: "bold",
                 margin: "0 0 12px 0",
-                background: "linear-gradient(135deg, #3b82f6, #8b5cf6)",
+                background: "linear-gradient(135deg, #22c55e, #a3e635)",
                 backgroundClip: "text",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 color: "transparent",
               }}
             >
-              YOUR_NAME
+              Huy Le
             </h1>
             <p
               style={{
@@ -105,7 +105,7 @@ export async function GET() {
                 fontWeight: "500",
               }}
             >
-              YOUR_TITLE
+              Software Engineering Intern
             </p>
             <div
               style={{
@@ -113,13 +113,13 @@ export async function GET() {
                 color: "#94a3b8",
                 fontWeight: "400",
                 padding: "16px 32px",
-                backgroundColor: "rgba(59, 130, 246, 0.1)",
+                backgroundColor: "rgba(34, 197, 94, 0.1)",
                 borderRadius: "16px",
-                border: "2px solid rgba(59, 130, 246, 0.3)",
+                border: "2px solid rgba(34, 197, 94, 0.3)",
                 backdropFilter: "blur(10px)",
               }}
             >
-              Learn more about YOUR_NAME
+              Learn more about Huy Le
             </div>
           </div>
 

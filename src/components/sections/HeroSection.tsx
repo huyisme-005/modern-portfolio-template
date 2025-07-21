@@ -278,13 +278,10 @@ export function HeroSection({
             className="mb-2 sm:mb-4 text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight cursor-pointer hover:scale-105 transition-transform duration-300"
             onClick={() => onCatsToggle?.(!showCats)}
           >
-            YOUR_FIRST_NAME{" "}
-            <span className="bg-gradient-to-r from-gray-400 to-gray-500 bg-clip-text text-transparent">
-              YOUR_LAST_NAME
-            </span>
+            Huy <span className="bg-gradient-to-r from-green-500 to-lime-300 bg-clip-text text-transparent">Le</span>
           </h1>
           <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-gray-200">
-            Product Manager
+            Software Engineering Intern
           </div>
         </motion.div>
 
@@ -300,7 +297,7 @@ export function HeroSection({
               transition={{ delay: 0.5, duration: 0.6 }}
               className="text-center px-2"
             >
-              Building human-centered products that transform ideas into
+              A Computer Science student driven by the mission to support society with greater goods. Always looking forward to learning and going beyond the code to solve the most pressing issues.
             </motion.div>
 
             {/* Dynamic Animated Text Gallery */}

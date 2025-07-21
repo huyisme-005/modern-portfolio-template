@@ -12,11 +12,11 @@ import {
 
 const WELCOME_MESSAGE: Message = {
   role: "assistant" as const,
-  content: `👋 Hey there! I'm YOUR_NAME's AI assistant!
+  content: `👋 Hey there! I'm Huy Le's AI assistant!
 
-I can help you discover what makes YOUR_NAME tick as a YOUR_TITLE.
+I can help you discover what makes Huy Le tick as a Software Engineering Intern.
 
-Try asking me something like "What's YOUR_NAME's biggest accomplishment?" or "How does YOUR_NAME approach problem-solving?"`,
+Try asking me something like "What's Huy Le's biggest accomplishment?" or "How does Huy Le approach problem-solving?"`,
   timestamp: new Date(),
 };
 

@@ -60,7 +60,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Send email using Resend
-    const emailDestination = process.env.YOUR_EMAIL || "your.email@example.com";
+    const emailDestination = process.env.YOUR_EMAIL || "hl9082@rit.edu";
     const { data, error } = await resend.emails.send({
       from: `Lawrence Hua Portfolio <${process.env.FROM_EMAIL || "noreply@lawrencehua.com"}>`,
       to: [emailDestination],
@@ -98,45 +98,40 @@ export async function POST(request: NextRequest) {
     if (email && resend) {
       try {
         const { data: userData, error: userError } = await resend.emails.send({
-          from: `YOUR_NAME Portfolio <${process.env.FROM_EMAIL || "noreply@yourdomain.com"}>`,
+          from: `Huy Le Portfolio <${process.env.FROM_EMAIL || "noreply@huyisme-005.github.io"}>`,
           to: [email],
-          subject: `✅ Message Sent Successfully - YOUR_NAME`,
+          subject: `✅ Message Sent Successfully - Huy Le`,
           html: `
             <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-              <h2 style="color: #10b981;">✅ Your Message Has Been Sent!</h2>
-              
-              <div style="background: #ecfdf5; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #10b981;">
-                <p style="margin: 0; font-size: 16px; color: #065f46;">
-                  Hi ${name},<br><br>
+              <h2 style="color: #22c55e;">✅ Your Message Has Been Sent!</h2>
+              <div style="background: #ecfdf5; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #22c55e;">
+                <p style="margin: 0; font-size: 16px; color: #166534;">
+                  Hi  ${name},<br><br>
                   Thank you so much for reaching out! Your message has been successfully submitted and I truly appreciate you taking the time to contact me.
                 </p>
               </div>
-
               <div style="background: #f8fafc; padding: 20px; border-radius: 8px; margin: 20px 0;">
                 <h3 style="margin-top: 0; color: #374151;">📋 Message Summary</h3>
                 <p><strong>Your Name:</strong> ${name}</p>
                 <p><strong>Your Email:</strong> ${email}</p>
                 <p><strong>Subject:</strong> ${subject}</p>
-                <div style="background: white; padding: 15px; border-radius: 4px; border-left: 4px solid #10b981; margin-top: 15px;">
+                <div style="background: white; padding: 15px; border-radius: 4px; border-left: 4px solid #22c55e; margin-top: 15px;">
                   <strong>Your Message:</strong><br>
                   ${message.replace(/\n/g, "<br>")}
                 </div>
               </div>
-              
               <div style="background: #eff6ff; padding: 20px; border-radius: 8px; margin: 20px 0;">
-                <h3 style="margin-top: 0; color: #1e40af;">📞 What Happens Next?</h3>
+                <h3 style="margin-top: 0; color: #166534;">📞 What Happens Next?</h3>
                 <ul style="margin: 10px 0; padding-left: 20px;">
                   <li>I'll send a personalized response within 24-48 hours</li>
-                  <li>In the meantime, feel free to explore more about my work at <a href="YOUR_WEBSITE_URL" style="color: #2563eb;">YOUR_WEBSITE_URL</a></li>
+                  <li>In the meantime, feel free to explore more about my work at <a href="https://huyisme-005.github.io" style="color: #22c55e;">https://huyisme-005.github.io</a></li>
                 </ul>
-                
-                <p style="color: #334155; font-size: 16px;">Best regards,<br><strong>YOUR_NAME</strong></p>
-                
+                <p style="color: #334155; font-size: 16px;">Best regards,<br><strong>Huy Le</strong></p>
                 <p style="color: #64748b; font-size: 14px; line-height: 1.6; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e2e8f0;">
-                          📧 ${process.env.EMAIL_NAME || "your.email@example.com"}<br>
-        🔗 <a href="YOUR_WEBSITE_URL" style="color: #2563eb;">YOUR_WEBSITE_URL</a><br>
-                  🎯 AI Product Manager | Full-Stack Developer | Startup Founder<br><br>
-                  <em>I'm passionate about leveraging AI and data to solve real-world problems. Visit <a href="YOUR_WEBSITE_URL" style="color: #2563eb;">my website</a> to find out more information about my background, projects, and experience.</em>
+                  📧 hl9082@rit.edu<br>
+                  🔗 <a href="https://huyisme-005.github.io" style="color: #22c55e;">https://huyisme-005.github.io</a><br>
+                  🎯 Software Engineering Intern | Full-Stack Developer | AI Engineer<br><br>
+                  <em>I'm passionate about leveraging AI and data to solve real-world problems. Visit <a href="https://huyisme-005.github.io" style="color: #22c55e;">my website</a> to find out more information about my background, projects, and experience.</em>
                 </p>
               </div>
             </div>

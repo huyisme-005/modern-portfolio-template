@@ -11,8 +11,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#ffffff",
-        secondary: "#000000",
+        primary: '#166534', // deep green
+        secondary: '#a3e635', // lime/earthy green
+        accent: '#22c55e', // vibrant green
+        background: '#f7fbe8', // light earth background
+        surface: '#e2e8d8', // muted earth surface
+        // Optionally, keep Tailwind's default palette for other uses
       },
       animation: {
         "fade-in": "fadeIn 0.5s ease-in-out",

@@ -52,10 +52,10 @@ export function ChatInterface({ isOpen, onClose }: ChatbotProps) {
   } = useChatbot(isOpen);
 
   const defaultQuickQuestions = [
-    "Tell me about YOUR_NAME's experience and background",
-    "What are YOUR_NAME's key skills and technical abilities?",
-    "Show me YOUR_NAME's most impressive projects",
-    "Tell me a fun fact about YOUR_NAME",
+    "Tell me about Huy Le's experience and background",
+    "What are Huy Le's key skills and technical abilities?",
+    "Show me Huy Le's most impressive projects",
+    "Tell me a fun fact about Huy Le",
   ];
 
   const moreQuestions = [
