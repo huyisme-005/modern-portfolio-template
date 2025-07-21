@@ -26,7 +26,10 @@ export const projectsData = [
     description:
       "La Musique is an adaptive song-writing application designed to be your creative music partner. It leverages Google Gemini AI API to generate song lyrics and fitting melodies based on user-provided themes, details, and a selected emotion. It also detects the genres of the input audios. The app allows users to write music without artistic background.",
     technologies: ["Next.js", "React", "Tailwind CSS", "Genkit", "Zod", "Vercel"],
+    tags: ["AI", "Next.js", "React", "Music", "Genkit"],
     link: "#",
+    linkText: "View Project",
+    linkIcon: "external",
     image: "/images/placeholders/pm_happy_hour_logo.jpeg",
     achievements: [
       "Built interactive stage with Next.js & React, making song creation more dynamic and smoother by 50%",
@@ -34,13 +37,17 @@ export const projectsData = [
       "Integrated Genkit with Google Gemini for lyrics, melodies, and genre detection (≥70% confidence)",
       "Ensured code quality and precise data with TypeScript & Zod",
     ],
+    featured: true,
   },
   {
     title: "U-fund project",
     description:
       "U-fund is made to help manage and support the variety of needs for a non-profit organization. Through the website, Managers can list what they need, and helpers can fund the needs they want to support.",
     technologies: ["Angular", "Spring Boot", "Java", "JUnit", "Docker"],
+    tags: ["Angular", "Spring Boot", "Java", "Non-profit"],
     link: "#",
+    linkText: "View Project",
+    linkIcon: "external",
     image: "/images/placeholders/pm_happy_hour_logo.jpeg",
     achievements: [
       "Built SPA with Angular",
@@ -50,19 +57,24 @@ export const projectsData = [
       "Containerized app and enhanced security by 60% with Docker",
       "Secured user data with mock-up JSON storage",
     ],
+    featured: false,
   },
   {
     title: "ReWear",
     description:
       "Help users shop sustainably by finding affordable second-hand fashion, connecting them with local clothing swaps, and building communities where they can share wardrobes and track their fashion impact.",
     technologies: ["React", "Next.js", "AWS DynamoDB", "JavaScript", "Python", "Google Form"],
+    tags: ["React", "Next.js", "AWS DynamoDB", "Sustainability"],
     link: "#",
+    linkText: "View Project",
+    linkIcon: "external",
     image: "/images/placeholders/pm_happy_hour_logo.jpeg",
     achievements: [
       "Gathered 14 early adopters via Google Form Survey",
       "Built a landing page with React",
       "Created a data storage with AWS DynamoDB for users' accounts",
     ],
+    featured: false,
   },
 ];
 
