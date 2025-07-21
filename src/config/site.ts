@@ -3,56 +3,26 @@
 
 export const siteConfig = {
   // Basic Information
-  name: "YOUR_NAME",
-  title: "YOUR_TITLE",
+  name: "Huy Le",
+  title: "Computer Science Student",
   description:
-    "Portfolio website showcasing my work in YOUR_EXPERTISE and YOUR_FIELD",
+    "Portfolio website showcasing my work in Software Engineering and Computer Science",
 
   // Contact Information
   contact: {
-    email: "your.email@example.com",
-    phone: "+1 (555) 123-4567",
-    location: "Your City, State",
-    linkedin: "https://linkedin.com/in/yourprofile",
-    github: "https://github.com/yourusername",
-    twitter: "https://twitter.com/yourhandle",
+    email: "hl9082@rit.com",
+    phone: "+1 (404)-203-9864",
+    linkedin: "https://linkedin.com/in/huy-g-le",
+    github: "https://github.com/huyisme-005",
   },
 
-  // Social Media
-  social: {
-    linkedin: "https://linkedin.com/in/yourprofile",
-    github: "https://github.com/yourusername",
-    twitter: "https://twitter.com/yourhandle",
-    instagram: "https://instagram.com/yourhandle",
-    youtube: "https://youtube.com/@yourchannel",
-  },
-
-  // Images
-  images: {
-    profile: "/images/placeholders/pm_happy_hour_logo.jpeg",
-    og: "/og-image.png",
-    favicon: "/favicon.png",
-  },
-
-  // SEO
-  seo: {
-    domain: "https://YOUR_DOMAIN.com",
-    keywords: [
-      "YOUR_NAME",
-      "YOUR_TITLE",
-      "YOUR_EXPERTISE",
-      "Portfolio",
-      "YOUR_SKILLS",
-    ],
-    googleVerification: "your-google-verification-code",
-  },
 
   // Hero Section
   hero: {
-    headline: "Hi, I'm YOUR_NAME",
+    headline: "Hi, I'm Huy Le",
     subtitle: "I help companies build better products",
     description:
-      "Product manager with expertise in user experience, business strategy, and team leadership. Passionate about creating products that users love and businesses value.",
+      "Computer Science student with expertise in fullstack development, AI Development, and an eagerness to go above and beyond.",
     ctaText: "View My Work",
     ctaLink: "#projects",
   },
@@ -100,14 +70,10 @@ export const siteConfig = {
     {
       category: "Tools & Platforms",
       items: [
-        "Jira",
-        "Confluence",
-        "Mixpanel",
-        "Google Analytics",
         "Slack",
-        "Notion",
-        "Miro",
-        "Hotjar",
+        "Discord",
+        "Trello",
+        "ClickUp",
       ],
     },
   ],
